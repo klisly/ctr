@@ -1,53 +1,85 @@
-request_id                object
-report_time                int64
-action                     int64
-t_language                object
-t_country                 object
-t_pid                     object
-t_ip                      object
-t_channel                 object
-t_scene                   object
-t_action                   int64
-t_ctype                    int64
-t_location                object
-uid                       object
-u_level                    int64
-u_umi_interest            object
-u_umi_interest_weight     object
-u_umi_cate                object
-u_umi_cate_weight         object
-u_uli_interest            object
-u_uli_interest_weight     object
-u_uli_cate                object
-u_uli_cate_weight         object
-u_usi_interest            object
-u_usi_interest_weight     object
-u_usi_cate                object
-u_usi_cate_weight         object
-item_id                   object
-cp_publisher              object
-cp_media_level             int64
-cp_publish_time            int64
-cp_life_hour               int64
-cp_newsy_score           float64
-cp_word_count              int64
-cp_category               object
-cp_category_weight       float64
-cp_interests              object
-cp_interests_weight      float64
-cp_location               object
-cp_location_weight       float64
-cp_list_image_count        int64
-cp_clickbait_type          int64
-cp_vulgar_type             int64
-cp_product_type            int64
-cp_is_local                int64
-cp_is_local_publisher      int64
-rs_channel                object
-rs_p1_score              float64
-rs_gactr                 float64
-rs_tag_interest           object
-rs_tag_interest_dactr     object
-rs_tag_cate               object
-rs_tag_cate_dactr        float64
-dtype: object
+root
+ |-- rs_tag_interest: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_publish_day_of_month: long (nullable = true)
+ |-- u_uli_cate_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- u_uli_interest_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- action: long (nullable = true)
+ |-- cp_word_count: long (nullable = true)
+ |-- cp_interests_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- request_id: string (nullable = true)
+ |-- t_country: string (nullable = true)
+ |-- cp_publish_hour: long (nullable = true)
+ |-- cp_age: long (nullable = true)
+ |-- report_day_of_week: long (nullable = true)
+ |-- cp_list_image_count: long (nullable = true)
+ |-- cp_media_level: long (nullable = true)
+ |-- t_action: long (nullable = true)
+ |-- cp_publisher: string (nullable = true)
+ |-- t_ctype: long (nullable = true)
+ |-- item_id: string (nullable = true)
+ |-- report_day_of_year: long (nullable = true)
+ |-- u_umi_cate: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- u_umi_interest_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- cp_publish_time: string (nullable = true)
+ |-- cp_publish_hr: string (nullable = true)
+ |-- report_hour: long (nullable = true)
+ |-- cp_rest_age: long (nullable = true)
+ |-- cp_product_type: long (nullable = true)
+ |-- rs_channel: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_location_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- rs_tag_cate_dactr: float (nullable = true)
+ |-- report_time: string (nullable = true)
+ |-- cp_is_local_publisher: long (nullable = true)
+ |-- uid: string (nullable = true)
+ |-- cp_category_weight: float (nullable = true)
+ |-- cp_location: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_publish_day_of_week: long (nullable = true)
+ |-- t_pid: string (nullable = true)
+ |-- cp_is_local: long (nullable = true)
+ |-- u_usi_cate: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- u_usi_interest_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- rs_tag_cate: string (nullable = true)
+ |-- u_level: long (nullable = true)
+ |-- cp_publish_day_of_year: long (nullable = true)
+ |-- t_channel: string (nullable = true)
+ |-- u_uli_cate: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_category: string (nullable = true)
+ |-- u_uli_interest: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_interests: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_vulgar_type: long (nullable = true)
+ |-- t_scene: string (nullable = true)
+ |-- rs_tag_interest_dactr: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- cp_life_hour: long (nullable = true)
+ |-- u_usi_cate_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- report_day_of_month: long (nullable = true)
+ |-- rs_p1_score: float (nullable = true)
+ |-- report_hr: string (nullable = true)
+ |-- t_language: string (nullable = true)
+ |-- u_umi_interest: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- cp_newsy_score: float (nullable = true)
+ |-- u_umi_cate_weight: array (nullable = true)
+ |    |-- element: float (containsNull = true)
+ |-- t_ip: string (nullable = true)
+ |-- t_location: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- u_usi_interest: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- rs_gactr: float (nullable = true)
+ |-- cp_clickbait_type: long (nullable = true)
